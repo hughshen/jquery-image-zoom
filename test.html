@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Simple Image Zoom</title>
+	<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="jquery-image-zoom.js"></script>
+	<style>
+		a img {
+			max-width: 150px;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<h2>Image#1</h2>
+	<div>
+		<a class="img-zoom" href="https://farm8.staticflickr.com/7489/15241066224_8864806ffd_b.jpg"><img src="https://farm8.staticflickr.com/7489/15241066224_8864806ffd_b.jpg"></a>
+	</div>
+
+	<h2>Image#2</h2>
+	<div>
+		<a class="img-zoom" href="./imgs/1.jpg"><img src="./imgs/1.jpg"></a>
+	</div>
+
+<script>
+;(function($) {
+	$('.img-zoom').imageZoom();
+})(jQuery);
+</script>
+
+</body>
+</html>
