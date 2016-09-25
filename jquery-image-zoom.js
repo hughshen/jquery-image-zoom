@@ -28,6 +28,8 @@
 			$(wrapNode).addClass('image-zoom-wrap');
 			$(closeNode).addClass('image-zoom-close');
 
+			settings.wrapCss.top = $(window).scrollTop() + 'px';
+
 			// Set element style
 			if (settings.elementClass) {
 				$(bgNode).css(settings.bgCss);
@@ -67,7 +69,7 @@
 			'position': 'fixed',
 			'top': '0',
 			'left': '0',
-			'z-index': '1',
+			'z-index': '1000',
 			'width': '100%',
 			'max-width': '100%',
 			'height': '100%',
@@ -77,7 +79,7 @@
 			'position': 'absolute',
 			'top': '20px',
 			'left': '50%',
-			'z-index': '2',
+			'z-index': '1001',
 			'width': '70%',
 			'margin': '40px 0',
 			'border': '3px solid #fff',
@@ -92,7 +94,7 @@
 			'position': 'absolute',
 			'top': '-13px',
 			'right': '-13px',
-			'z-index': '3',
+			'z-index': '1002',
 			'width': '20px',
 			'height': '20px',
 			'line-height': '20px',
