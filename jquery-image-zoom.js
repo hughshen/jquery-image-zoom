@@ -80,7 +80,7 @@
 			'top': '20px',
 			'left': '50%',
 			'z-index': '1001',
-			'width': '70%',
+			'max-width': '70%',
 			'margin': '40px 0',
 			'border': '3px solid #fff',
 			'border-radius': '3px',
